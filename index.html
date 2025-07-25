@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List - DvnY</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 class="text-3xl font-bold">Todo List</h1>
+        </header>
+
+        <!-- Form Todo -->
+        <form>
+            <div>
+                <label for="todo-input" class="block text-sm font-medium text-gray-700">Add a new task</label>
+                <input type="text" id="todo-input" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your task here">
+            </div>
+
+            <div>
+                <label for="todo-input" class="block text-sm font-medium text-gray-700">Date</label>
+                <input type="date" id="todo-input" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your task here">
+            </div>
+
+            <div>
+                <button class="px-[26px] py-[4px] rounded-[8px] bg-blue-500 text-white">+</button>
+            </div>
+        </form>
+
+        <!-- List Todo -->
+    </main>
+    <!-- JavaScript External -->
+    <script src="js/script.js"></script>
+</body>
+</html>
