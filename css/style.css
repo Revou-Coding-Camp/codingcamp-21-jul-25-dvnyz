@@ -35,3 +35,29 @@ form {
     border: 1px solid #e5e7eb;
     border-radius: 8px;
 }
+
+.notification {
+    background-color: #f87171; /* Tailwind red-400 */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: opacity 0.3s ease-in-out;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#notification-close {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 12px;

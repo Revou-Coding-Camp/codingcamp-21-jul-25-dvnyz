@@ -53,7 +53,18 @@
         <!-- List Todo -->
         <section>
             <div class="action-container pt-[16px] pb-[16px]">
-                <button class="px-[26px] py-[4px] rounded-[8px] bg-gray-500 text-white">Filter</button>
+                <div>
+                    <label for="filter-status" class="mr-2 font-medium">Filter Status:</label>
+                    <select id="filter-status" onchange="setFilterStatus(this.value)" class="rounded border border-gray-300 px-2 py-1">
+                        <option value="all">All</option>
+                        <option value="completed">Completed</option>
+                        <option value="incomplete">Incomplete</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="filter-date" class="mr-2 font-medium">Filter Date:</label>
+                    <input type="date" id="filter-date" onchange="setFilterDate(this.value)" class="rounded border border-gray-300 px-2 py-1" />
+                </div>
                 <button type="button" class="px-[26px] py-[4px] rounded-[8px] bg-red-500 text-white" onclick="removeAllTask()">Delete All</button>
             </div>
 
