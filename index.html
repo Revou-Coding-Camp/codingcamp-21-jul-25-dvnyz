@@ -15,6 +15,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button onclick="setTheme('light')" class="active" id="lightTheme">☀️</button>
+        <button onclick="setTheme('dark')" id="darkTheme">🌙</button>
+    </div>
+
     <!-- Notification Container (for JS notification) -->
     <div id="notification-container" class="hidden"></div>
     <main>

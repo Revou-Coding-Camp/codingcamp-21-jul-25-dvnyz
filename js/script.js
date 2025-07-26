@@ -5,6 +5,20 @@
 
 console.log("Script loaded successfully!");
 
+// Theme management
+function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    
+    // Update toggle buttons
+    document.getElementById('lightTheme').classList.toggle('active', theme === 'light');
+    document.getElementById('darkTheme').classList.toggle('active', theme === 'dark');
+}
+
+// Load saved theme
+const savedTheme = localStorage.getItem('theme') || 'light';
+setTheme(savedTheme);
+
 // Global variables
 let filterStatus = 'all';
 let filterDate = '';
