@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List - DvnY</title>
 
     <!-- CSS External -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -21,20 +21,50 @@
         <form>
             <div>
                 <label for="todo-input" class="block text-sm font-medium text-gray-700">Add a new task</label>
-                <input type="text" id="todo-input" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your task here">
+                <input
+                    type="text"
+                    id="todo-input"
+                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Enter your task here"
+                />
             </div>
 
             <div>
-                <label for="todo-input" class="block text-sm font-medium text-gray-700">Date</label>
-                <input type="date" id="todo-input" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your task here">
+                <label for="date-input" class="block text-sm font-medium text-gray-700">Date</label>
+                <input
+                    type="date"
+                    id="date-input"
+                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Enter your task here"
+                />
             </div>
 
             <div>
-                <button class="px-[26px] py-[4px] rounded-[8px] bg-blue-500 text-white">+</button>
+                <button
+                    type="button"
+                    class="px-[26px] py-[4px] rounded-[8px] bg-blue-500 text-white"
+                    onclick="addTask();"
+                >
+                    +
+                </button>
             </div>
         </form>
 
         <!-- List Todo -->
+        <section>
+            <div class="action-container pt-[16px] pb-[16px]">
+                <button class="px-[26px] py-[4px] rounded-[8px] bg-gray-500 text-white">Filter</button>
+                <button type="button" class="px-[26px] py-[4px] rounded-[8px] bg-red-500 text-white" onclick="removeAllTask()">Delete All</button>
+            </div>
+
+            <header>
+                <h2 class="text-1xl font-bold">Task List</h2>
+            </header>
+
+            <div id="todo-list">
+                <p>No tasks available</p>
+            </div>
+        </section>
     </main>
     <!-- JavaScript External -->
     <script src="js/script.js"></script>

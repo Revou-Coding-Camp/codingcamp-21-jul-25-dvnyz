@@ -18,3 +18,20 @@ form {
     align-items: center;
     justify-content: space-evenly;
 }
+
+.action-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-item {
+    border-bottom: 1px solid;
+}
+
+#todo-list {
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
